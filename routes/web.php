@@ -11,7 +11,6 @@ Route::group(['prefix' => 'api'], function()
 		Route::delete('{id}', ['uses' => 'UserController@deleteUser']);
 	});
 });
-Route::get('/', function()
-{
+Route::get('/', function(){
 	return 'enjoy the silence...';
 });
